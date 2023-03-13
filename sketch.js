@@ -12,7 +12,7 @@ function draw() {
   
   r=60-t.getMinutes()-1;
   
-  k="    "+(60-t.getSeconds()) + " Seconds    ";
+  k="    "+(60-t.getSeconds()-1) + " Seconds    ";
   
   if (p > 0){
     textSize(10)
