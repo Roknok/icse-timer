@@ -1,0 +1,13 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+  position: fixed;
+  left:0px;
+  top:0px;
+}
+.nav {
+  display:none;
+}
