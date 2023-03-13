@@ -14,11 +14,13 @@ function draw() {
   
   k="    "+(60-t.getSeconds()-1) + " Seconds    ";
   
-  if (p > 0){
+   if(p < 0 || r < 0 || 60 - t.getSeconds() - 1 < 0) {
+  } else {
     textSize(10)
     sz= 10/textWidth(k)*windowWidth
     textSize(sz)
-    fill(230,245,250)
+    //fill(230,245,250)
+     fill(0,0,0)
     
     text("ICSE End:",windowWidth/2-textWidth("ICSE End")/2,windowHeight/5)
       
