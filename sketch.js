@@ -10,7 +10,7 @@ function draw() {
 
   p = (d - t.getDate() - 1) * 24 + 24 - t.getHours() - 1 + 13;
   
-  r=60-t.getMinutes()
+  r=60-t.getMinutes()-1;
   
   k="    "+(60-t.getSeconds()) + " Seconds    ";
   
