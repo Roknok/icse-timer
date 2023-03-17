@@ -31,6 +31,8 @@ function draw() {
     text(r+" Minutes",windowWidth/2-textWidth(r+" Minutes")/2,windowHeight/5*3
 )
     text(k,windowWidth/2-textWidth(k)/2,windowHeight/5*4)
+textSize(sz/2)
+text("Days : "+(d - t.getDate() - 1) ,windowWidth- textWidth("Days : "+(d - t.getDate() - 1))+10,sz/2)  
 
 strokeWeight(1);
 
