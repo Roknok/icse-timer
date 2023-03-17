@@ -33,6 +33,9 @@ function draw() {
     textSize(10)
     sz= 10/textWidth(k)*windowWidth
     textSize(sz)
+    
+    
+    
     fill(230,245,250)
     
     text("ICSE End:",windowWidth/2-textWidth("ICSE End")/2,windowHeight/5)
