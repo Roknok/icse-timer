@@ -24,8 +24,7 @@ function draw() {
       150
     )
   );
-  //console.log(t.getSeconds()*1000+t.getMilliseconds())
-  //console.log(e)
+
   if (e < 150 / 2) {
     background(100, 75 + e, 255);
   } else {
@@ -41,8 +40,8 @@ function draw() {
     fill(230, 245, 250);
 
     text(
-      "ICSE End:",
-      windowWidth / 2 - textWidth("ICSE End") / 2,
+      "ICSE End :",
+      windowWidth / 2 - textWidth("ICSE End :") / 2,
       windowHeight / 5
     );
 
@@ -59,14 +58,13 @@ function draw() {
     text(k, windowWidth / 2 - textWidth(k) / 2, (windowHeight / 5) * 4);
     textSize(sz / 3);
     text(
-      (d - t.getDate())+ " days left",
-      windowWidth - textWidth((d - t.getDate())+ " days left") - sz / 4,
-      windowHeight -sz/4
+      d - t.getDate() + " days left",
+      windowWidth - textWidth(d - t.getDate() + " days left") - sz / 4,
+      windowHeight - sz / 4
     );
 
     strokeWeight(1);
 
-    // Draw all hair strands stored in the array
     for (let i = 0; i < hairStrands.length; i++) {
       let x1 = hairStrands[i][0];
       let y1 = hairStrands[i][1];
@@ -85,18 +83,14 @@ function draw() {
   }
 }
 function mousePressed() {
-  // Generate random x and y coordinates
   let x1 = random(width);
   let y1 = random(height);
   let x2 = x1 + random(-80, 80);
   let y2 = y1 - random(40, 120);
 
-  // Generate random variations for each curve point
   let r1 = [random(-40, 40), random(-40, 40)];
   let r2 = [random(-40, 40), random(-40, 40)];
 
-  // Store haidjjdjjdjdr strand position and random variations in the arrays
   hairStrands.push([x1, y1, x2, y2, r1, r2]);
   strandPositions.push([x1, y1, x2, y2]);
 }
-
