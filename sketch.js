@@ -1,3 +1,7 @@
+let hairStrands = [];
+let strandPositions = [];
+
+
 function setup() {
   createCanvas(windowWidth, windowHeight);
 }
@@ -28,5 +32,40 @@ function draw() {
 )
     text(k,windowWidth/2-textWidth(k)/2,windowHeight/5*4)
 
+strokeWeight(1);
+
+  // Draw all hair strands stored in the array
+  for (let i = 0; i < hairStrands.length; i++) {
+    let x1 = hairStrands[i][0];
+    let y1 = hairStrands[i][1];
+    let x2 = hairStrands[i][2];
+    let y2 = hairStrands[i][3];
+    let r1 = hairStrands[i][4];
+    let r2 = hairStrands[i][5];
+    noFill();
+    beginShape();
+    curveVertex(x1, y1);
+    curveVertex(x1 + r1[0], y1 + r1[1]);
+    curveVertex(x2 + r2[0], y2 + r2[1]);
+    curveVertex(x2, y2);
+    endShape();
+
+
+
   }
+}
+function mousePressed() {
+  // Generate random x and y coordinates
+  let x1 = random(width);
+  let y1 = random(height);
+  let x2 = x1 + random(-20, 20);
+  let y2 = y1 - random(10, 30);
+
+  // Generate random variations for each curve point
+  let r1 = [random(-10, 10), random(-10, 10)];
+  let r2 = [random(-10, 10), random(-10, 10)];
+
+  // Store hair strand position and random variations in the arrays
+  hairStrands.push([x1, y1, x2, y2, r1, r2]);
+  strandPositions.push([x1, y1, x2, y2]);
 }
