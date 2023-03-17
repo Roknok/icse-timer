@@ -58,12 +58,12 @@ function mousePressed() {
   // Generate random x and y coordinates
   let x1 = random(width);
   let y1 = random(height);
-  let x2 = x1 + random(-40, 40);
-  let y2 = y1 - random(20, 60);
+  let x2 = x1 + random(-80, 80);
+  let y2 = y1 - random(40, 120);
 
   // Generate random variations for each curve point
-  let r1 = [random(-20, 20), random(-20, 20)];
-  let r2 = [random(-20, 20), random(-20, 20)];
+  let r1 = [random(-40, 40), random(-40, 40)];
+  let r2 = [random(-40, 40), random(-40, 40)];
 
   // Store haidjjdjjdjdr strand position and random variations in the arrays
   hairStrands.push([x1, y1, x2, y2, r1, r2]);
