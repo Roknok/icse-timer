@@ -49,7 +49,7 @@ strokeWeight(1);
     curveVertex(x2 + r2[0], y2 + r2[1]);
     curveVertex(x2, y2);
     endShape();
-
+}
 
 
   }
