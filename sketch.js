@@ -5,18 +5,10 @@ let strandPositions = [];
 function setup() {
   createCanvas(windowWidth, windowHeight);
 }
-e = 100
-mm=1
 
 function draw() {
-  background(100,e,255);
-  e+=mm;
-  if(e>200){
-    mm=-1
-  }
-  if(e<100){
-    mm=1
-  }
+
+
   
   d = 29;
 
@@ -27,6 +19,14 @@ function draw() {
   r=60-t.getMinutes()-1;
   
   k="    "+(60-t.getSeconds()-1) + " Seconds    ";
+  e = round(map((60000-(t.getSeconds()*1000+t.getMilliseconds()))%10000,1,10000,0,150))
+//console.log(t.getSeconds()*1000+t.getMilliseconds())
+  //console.log(e)
+  if(e<(150/2)){
+    background(100,75+e,255)
+  }else{
+    background(100,225-e,255);
+  }
   
    if(p < 0 || r < 0 || 60 - t.getSeconds() - 1 < 0) {
   } else {
