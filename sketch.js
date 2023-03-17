@@ -5,9 +5,19 @@ let strandPositions = [];
 function setup() {
   createCanvas(windowWidth, windowHeight);
 }
+e = 100
+mm=0.5
 
 function draw() {
-  background(100,100,255);
+  background(100,e,255);
+  e+=mm;
+  if(e>200){
+    mm=-0.5
+  }
+  if(e<100){
+    mm=0.5
+  }
+  
   d = 29;
 
   t = new Date();
