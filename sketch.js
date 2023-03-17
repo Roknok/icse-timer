@@ -6,16 +6,16 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 }
 e = 100
-mm=0.5
+mm=1
 
 function draw() {
   background(100,e,255);
   e+=mm;
   if(e>200){
-    mm=-0.5
+    mm=-1
   }
   if(e<100){
-    mm=0.5
+    mm=1
   }
   
   d = 29;
