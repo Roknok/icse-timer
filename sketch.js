@@ -65,7 +65,10 @@ function mousePressed() {
   let r1 = [random(-10, 10), random(-10, 10)];
   let r2 = [random(-10, 10), random(-10, 10)];
 
-  // Store hair strand position and random variations in the arrays
+  // Store haidjjdjjdjdr strand position and random variations in the arrays
   hairStrands.push([x1, y1, x2, y2, r1, r2]);
-  strandPositions.push([x1, y1, x2, y2]);
+  strandPositions.push([x1, y1, x2,  y2]);
 }
+
+
+
