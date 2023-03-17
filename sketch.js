@@ -45,8 +45,8 @@ function draw() {
 )
     text(k,windowWidth/2-textWidth(k)/2,windowHeight/5*4)
 textSize(sz/2)
-//text("Days : "+(d - t.getDate()) ,windowWidth- textWidth("Days : "+(d - t.getDate()))-sz/4,sz/2)  
-text("Days : "+ e ,windowWidth- textWidth("Days : "+(d - t.getDate()))-sz/4,sz/2)  
+text("Days : "+(d - t.getDate()) ,windowWidth- textWidth("Days : "+(d - t.getDate()))-sz/4,sz/2)  
+
 
 strokeWeight(1);
 
