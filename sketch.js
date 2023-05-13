@@ -42,7 +42,7 @@ function draw() {
 
     text(
       "The Return :",
-      windowWidth / 2 - textWidth("Mumma Returns :") / 2,
+      windowWidth / 2 - textWidth("The Return :") / 2,
       windowHeight / 5
     );
 
