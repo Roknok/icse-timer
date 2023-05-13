@@ -6,11 +6,11 @@ function setup() {
 }
 
 function draw() {
-  d = 29;
+  d = 140;
 
   t = new Date();
 
-  p = (d - t.getDate() - 1) * 24 + 24 - t.getHours() - 1 + 13;
+  p = (d - t.getDate() - 1) * 24 + 24 - t.getHours() - 1 + 0;
 
   r = 60 - t.getMinutes() - 1;
 
