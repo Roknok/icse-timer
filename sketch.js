@@ -41,8 +41,8 @@ function draw() {
     fill(230, 245, 250);
 
     text(
-      "ICSE End :",
-      windowWidth / 2 - textWidth("ICSE End :") / 2,
+      "Mumma Returns :",
+      windowWidth / 2 - textWidth("Mumma Returns :") / 2,
       windowHeight / 5
     );
 
