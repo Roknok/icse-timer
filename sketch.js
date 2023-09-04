@@ -6,7 +6,7 @@ function setup() {
 }
 
 function draw() {
-  d = 141 + 13 - 31 -30 - 31;
+  d = 141 + 13 - 31 -30 - 31-31;
   
 
   t = new Date();
